@@ -1,3 +1,4 @@
+//Variáveis.
 console.log('Hello World') // Apresenta a mensagem Hello World na tela.
 
 const nomeCompleto = 'Péricles Peres Maciel Martins'
