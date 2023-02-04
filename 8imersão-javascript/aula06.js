@@ -7,6 +7,12 @@ class Personagem {
     poder = 0;
     sexo = '';
 
+    constructor(nome,poder,sexo) {
+        this.nome = nome
+        this.poder = poder
+        this.sexo = sexo
+    }
+
     // Método que exibe uma mensagem dizendo que o personagem está voando.
     voar() {
         console.log(`O personagem ${this.nome} está voando!`);
@@ -22,13 +28,16 @@ class Personagem {
 }
 
 // Cria uma instância da classe Personagem e atribui valores aos seus atributos.
-let goku = new Personagem();
-goku.nome = 'Goku';
-goku.poder = 100;
-goku.sexo = 'Masculino';
-
+let goku = new Personagem('Goku',100,'Masculino');
+let vegeta = new Personagem('Vegeta',99,'Masculino')
 // Chama cada um dos métodos da instância de goku para que sejam executadas as ações e exibidas as mensagens na tela.
 goku.genero();
 goku.voar();
 goku.lutar();
+console.log('')
+// Chama cada um dos métodos da instância de vegeta para que sejam executadas as ações e exibidas as mensagens na tela.
+vegeta.genero();
+vegeta.voar();
+vegeta.lutar();
+console.log('')
 
