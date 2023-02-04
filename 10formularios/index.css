@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Alinha os elementos dentro do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #00000027;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Estilo para as labels */
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para as caixas de texto */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #286b2a;
+}
+
+/* Media queries para diferentes resoluções de tela */
+@media (max-width: 767px) {
+    form {
+        width: 100%;
+    }
+}
