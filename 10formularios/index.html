@@ -8,25 +8,23 @@
     <title>Formulário de captura</title>
 </head>
 <body>
-    <div>
-        <!--Formulário de captura de dados-->
-        <form action="" id="formulario_de_captura" method="post">
-            <!--Caixa de Texto do Campo: PrimeiroNome-->
-            <label for="primeiro_nome">Primeiro Nome:</label>
-            <input type="text" name="primeiro_nome" id="primeiro_nome">
-            <br>
-            <!--Caixa de Texto do Campo: E-mail-->
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <!--Caixa de Texto do Campo: WhatsApp-->
-            <label for="whatsapp">Whatsapp:</label>
-            <input type="tel" name="whatsapp" id="whatsapp">
-            <br>
-            <!--Botão que salva os dados-->
-            <button id="btn_salvar">Salvar</button>
-        </form>
-    </div>
+    <!--Formulário de captura de dados-->
+    <form action="" id="formulario_de_captura" method="post">
+        <!--Caixa de Texto do Campo: PrimeiroNome-->
+        <label for="primeiro_nome">Primeiro Nome:</label>
+        <input type="text" name="primeiro_nome" id="primeiro_nome" required placeholder="Digite seu nome">
+        <br>
+        <!--Caixa de Texto do Campo: E-mail-->
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required placeholder="Digite seu e-mail">
+        <br>
+        <!--Caixa de Texto do Campo: WhatsApp-->
+        <label for="whatsapp">Whatsapp:</label>
+        <input type="tel" name="whatsapp" id="whatsapp" required placeholder="Digite seu número">
+        <br>
+        <!--Botão que salva os dados-->
+        <button id="btn_salvar">Salvar</button>
+    </form>
     <script src="./index.js"></script>
 </body>
 </html>
